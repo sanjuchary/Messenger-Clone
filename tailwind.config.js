@@ -6,7 +6,16 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    // colors: {
+    //   transparent: "transparent",
+    //   current: "currentColor",
+    //   Button: "#009afd",
+    // },
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require("@tailwindcss/forms")({
+      strategy: "class",
+    }),
+  ],
 };
